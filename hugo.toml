@@ -4,6 +4,7 @@ title = 'Kožíšek voní'
 enableRobotsTXT = "true"
 disableKinds = ["sitemap"]
 publishDir = "docs"
+favicon = true
 
 [Params]
   selfHosted = true

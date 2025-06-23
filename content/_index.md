@@ -28,7 +28,19 @@ cards:
     {
       "image": "images/IMG_4254.jpeg",
       "title": "Kde je můj nákup?",
-      "description": "Objednal jsem si kilo živých brouků, tak kde jsou?",
+      "description": "Objednal jsem si kilo živých cvrčků, tak kde jsou?",
+      "date": "",
+    },
+    {
+      "image": "images/IMG_4909.jpeg",
+      "title": "Ha! Bug!",
+      "description": "Už jednoho brouka vidím!",
+      "date": "",
+    },
+    {
+      "image": "images/IMG_3451.jpeg",
+      "title": "Když ti zoomíci tak koušou.",
+      "description": "Já jsem Gryzík, maličký kocourek...",
       "date": "",
     },
     {
