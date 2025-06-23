@@ -1,9 +1,12 @@
 .PHONY: run build clean
+WIFI_IP := $(shell ipconfig getifaddr en0)
 
 all: build
 
 run:
-	hugo server -D --baseURL=http://localhost:1313
+	hugo server -D \
+		--bind=$(WIFI_IP) \
+		--baseURL=http://$(WIFI_IP):1313
 
 build:
 	hugo -D
