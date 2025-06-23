@@ -31,9 +31,10 @@
     }
 
     .card-title {
-      font-size: 3rem;
+      font-size: 4rem;
       font-weight: 600;
       margin-top: 0;
+      font-family: Garamond, 'Times New Roman', Times, serif;
     }
 
     .card-text {
@@ -53,6 +54,17 @@
       padding: 1em;
       /* optionally specify mask-size/position if needed */
     }
+
+    h1 {
+      font-size: 6rem;
+      font-family: Garamond, 'Times New Roman', Times, serif;
+    }
+    h1 img {
+      height: 6rem;
+    }
+    .lead {
+      font-family: 'Brush Script MT', cursive;
+    }
   </style>
 </head>
 
@@ -60,7 +72,11 @@
   <!-- Hero Section -->
   <header class="bg-light text-center py-5">
     <div class="container">
-      <h1 class="display-4">Kožíšek voní</h1>
+      <h1 class="display-4">
+        <img src='{{ "logo.png" | relURL }}' >
+        Kožíšek voní
+        <img src='{{ "logo.png" | relURL }}' >
+      </h1>
       <p class="lead">Gryžeme již od roku 2022.</p>
     </div>
   </header>
