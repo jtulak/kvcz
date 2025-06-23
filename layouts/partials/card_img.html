@@ -1,0 +1,13 @@
+
+{{ $card := . }}
+{{ $img := resources.Get .image }}
+
+{{ if not $img }}
+    {{ errorf "Could not find image at '%s', check the path." $card.image }}
+{{ end }}
+
+{{ with $img }}
+<div class="col-md-9  shadowed">
+    <img src="{{ .RelPermalink }}" class="card-img-top" alt="{{ $card.title }}">
+</div>
+{{ end }}

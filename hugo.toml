@@ -1,0 +1,9 @@
+baseURL = 'https://kozisekvoni.cz'
+languageCode = 'cz'
+title = 'Kožíšek voní'
+enableRobotsTXT = "true"
+disableKinds = ["sitemap"]
+publishDir = "docs"
+
+[Params]
+  selfHosted = true

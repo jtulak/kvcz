@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+
+<!-- Gallery Section -->
+<section id="gallery">
+  <div class="container">
+    {{ range $i, $card := .Params.cards }}
+    {{/* compute “left” on even, “right” on odd */}}
+    {{ $variant := cond (eq (mod $i 2) 0) "left" "right" }}
+    {{/* pass both the card and the variant into the partial */}}
+    {{ partial "card.html" (dict "card" $card "variant" $variant) }}
+    {{ end }}
+  </div>
+</section>
+
+
+{{ partial "footer.html" . }}

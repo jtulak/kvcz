@@ -1,0 +1,12 @@
+{{ $card := .card }}
+{{ $variant := .variant }}
+
+<div class="row align-items-center mb-4 card-{{ $variant }}">
+    {{ if eq $variant "left" }}
+        {{ partial "card_text" $card }}
+        {{ partial "card_img"  $card }}
+    {{ else }}
+        {{ partial "card_img" $card }}
+        {{ partial "card_text" $card }}
+    {{ end }}
+</div>
